@@ -78,8 +78,15 @@
 	}
 }
 .image--designArt {
-	background-image: url('https://image.freepik.com/free-vector/colorful-watercolor-splatter-modern-art-design_1340-7677.jpg');
-	background-repeat: no-repeat;
+	background: url('./assets/img/glassArt.jpeg') no-repeat center;
+	background-size: cover;
+}
+.image--facade {
+	background: url('./assets/img/facade.jpeg') no-repeat center;
+	background-size: cover;
+}
+.image--composite {
+	background: url('./assets/img/compositePanel.jpeg') no-repeat center;
 	background-size: cover;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2),	only screen and (min-device-pixel-ratio: 1.5) {

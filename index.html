@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-115155070-1');</script>
   </head>
   <body>
-    <header style="z-index: 1;text-transform: uppercase;"><a class="name" href="./">Hijazi Aluminum &amp; Glass</a>
+    <header style="z-index: 1;text-transform: uppercase;"><a style="font-size: 5rem;" id="headerTitle" class="name" href="./">Hijazi Aluminum &amp; Glass</a>
       <div class="curtain"></div>
       <div class="loader"></div>
     </header>
@@ -38,19 +38,24 @@
             </div>
           </div>
           <div class="section" style="z-index: 1;">
-            <div class="honorable white right" id="awwwards"><a href="http://www.awwwards.com" target="_blank">Awwwards</a></div>
+            <!-- <div class="honorable white right" id="awwwards"><a href="http://www.awwwards.com" target="_blank">Awwwards</a></div> -->
             <div class="fullpage__slide firstPageSlider">
               <div class="title title--top">
                 <h3 class="title__text js-letter">Facade Systems</h3>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <p class="title__lead js-letter">Facade Systems</p>
               </div>
-              <div class="moon">
+              <a class="image image--facade" href="./facade.html">
+                <div class="image__over">
+                  <div class="image__cover"></div>
+                  <div class="image__cover"></div>
+                </div>
+              <!-- <div class="moon">
                 <div class="moon__img js-parallax-moon">
                   <div class="moon__front layer" data-depth="0.2">
-                    <div class="moon__text-wrap">
+                    <div class="moon__text-wrap"> -->
                       <!-- <p class="moon__text js-moon" data-depth="0.5">Hello Worl!</p> -->
-                    </div>
+                    <!-- </div>
                   </div>
                   <div class="moon__front layer" data-depth="0.8">
                     <div class="cloud cloud--front1 js-moon"><img src="./assets/img/cloud1.svg" alt="cloud"></div>
@@ -62,24 +67,25 @@
                     <div class="cloud cloud--front2 js-moon"><img src="./assets/img/cloud2.svg" alt="cloud"></div>
                   </div>
                   <div class="moon__back layer" data-depth="0.5"><img class="js-moon" src="./assets/img/moon.svg" alt="moon"></div>
-                  <div class="moon__front layer" data-depth="0.7">
+                  <div class="moon__front layer" data-depth="0.7"> -->
                     <!-- <div class="cloud cloud--front3 js-moon"><img src="./assets/img/cloud3.svg" alt="cloud"></div> -->
-                  </div>
+                  <!-- </div>
                   <div class="moon__back layer" data-depth="0.3">
                     <div class="cloud cloud--back1 js-moon"><img src="./assets/img/b_cloud01.svg" alt="cloud"></div>
                   </div>
                 </div>
-              </div>
+              </div> -->
+            </a>
             </div>
           </div>
           <div class="section">
             <div class="fullpage__slide">
-              <div class="title">
+              <div style="z-index: 1;" class="title">
                 <h2 class="title__text js-letter">Aluminum Composite Panel</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <p class="title__lead js-letter">Aluminum Composite Panel</p>
-                <div class="btn-wrap js-letter"><a class="btn" href="/">Show Details</a></div>
-              </div><a class="image image--works" href="/">
+                <div class="btn-wrap js-letter"><a class="btn" href="/composite.html">Show Details</a></div>
+              </div><a class="image image--composite" href="/composite.html">
                 <div class="image__over">
                   <div class="image__cover"></div>
                   <div class="image__cover"></div>
@@ -93,11 +99,11 @@
           <div class="section">
             <div class="fullpage__slide">
               <div class="title">
-                <h2 class="title__text js-letter">Design Art</h2>
+                <h2 class="title__text js-letter">Glass Art</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                <p class="title__lead js-letter">Design Art</p>
-                <div class="btn-wrap js-letter"><a class="btn" href="/">Show Details</a></div>
-              </div><a class="image image--designArt" href="/">
+                <p class="title__lead js-letter">Glass Art</p>
+                <div class="btn-wrap js-letter"><a class="btn" href="./glassArt.html">Show Details</a></div>
+              </div><a class="image image--designArt" href="./glassArt.html">
                 <div class="image__over">
                   <div class="image__cover"></div>
                   <div class="image__cover"></div>
@@ -114,8 +120,8 @@
                 <h2 class="title__text js-letter">About Us</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <p class="title__lead js-letter">About Us</p>
-                <div class="btn-wrap js-letter"><a class="btn" href="/">Show Details</a></div>
-              </div><a class="image image--about" href="/">
+                <div class="btn-wrap js-letter"><a class="btn" href="/about.html">Show Details</a></div>
+              </div><a class="image image--about" href="/about.html">
                 <div class="image__over">
                   <div class="image__cover"></div>
                   <div class="image__cover"></div>
@@ -183,7 +189,23 @@
       //   });
       // })
 
+      if (window.location.hash == '#top' || window.location.hash == '') {
+        $('#headerTitle').css('fontSize', '5rem');
+      }else {
+        $('#headerTitle').css('fontSize', '3rem');
+      }
+
+      $(window).on('hashchange', function(e){
+      console.log(e.target.location.hash);
+      if (e.target.location.hash == "#top" || e.target.location.hash == ""){
+        $('#headerTitle').css('fontSize', '5rem')
+      }else {
+        $('#headerTitle').css('fontSize', '3rem');
+      }
+    });
+
       function nextPage() {
+        $('#headerTitle').css('fontSize','3rem');
         $('a[href="#middle"]').click();
       }
     </script>
