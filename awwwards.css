@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 /* Base */
-
+* {
+	font-family: 'Roboto', sans-serif;
+}
 #awwwards{
 	position: absolute;
 	top: 100px;
@@ -73,6 +76,11 @@
 		height: 68px;
 		background-size: 45px 68px;
 	}
+}
+.image--designArt {
+	background-image: url('https://image.freepik.com/free-vector/colorful-watercolor-splatter-modern-art-design_1340-7677.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2),	only screen and (min-device-pixel-ratio: 1.5) {
 	/* HONORABLE */
