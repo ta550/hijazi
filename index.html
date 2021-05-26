@@ -26,10 +26,11 @@
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-115155070-1');</script>
   </head>
   <body>
-    <header style="z-index: 1;text-transform: uppercase;"><a style="font-size: 5rem;" id="headerTitle" class="name" href="./">Hijazi Aluminum &amp; Glass <img src="./assets/img/HijaziLogo.png" style="width: 15rem;height: 10rem;"></a>
+    <header style="z-index: 1;text-transform: uppercase;"><a style="font-size: 5rem;" id="headerTitle" class="name" href="./">Hijazi Aluminum &amp; Glass <img src="./assets/img/HijaziLogo.png" class="headerImage" style="width: 15rem;height: 10rem;"></a>
       <div class="curtain"></div>
       <div class="loader"></div>
     </header>
+    
     <main id="barba-wrapper">
       <div class="barba-container" data-namespace="top">
         <div class="fullpage" id="js-fullpage">
@@ -42,9 +43,10 @@
             <!-- <div class="honorable white right" id="awwwards"><a href="http://www.awwwards.com" target="_blank">Awwwards</a></div> -->
             <div class="fullpage__slide firstPageSlider">
               <div class="title title--top">
-                <h3 class="title__text js-letter">Facade Systems</h3>
+                <h3 class="title__text js-letter">Façade Systems</h3>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                <p class="title__lead js-letter">Facade Systems</p>
+                <p class="title__lead js-letter">Façade Systems</p>
+                <div class="btn-wrap js-letter"><a class="btn" href="./facade.html">Show Details</a></div>
               </div>
               <a class="image image--facade" href="./facade.html">
                 <div class="image__over">
@@ -82,7 +84,7 @@
           <div class="section">
             <div class="fullpage__slide">
               <div style="z-index: 1;" class="title">
-                <h2 class="title__text js-letter">Aluminum Composite Panel</h2>
+                <h2 class="title__text js-letter">Aluminum <br /> Composite Panel</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <p class="title__lead js-letter">Aluminum Composite Panel</p>
                 <div class="btn-wrap js-letter"><a class="btn" href="./composite.html">Show Details</a></div>
@@ -166,7 +168,7 @@
         </div>
         <div class="star js-parallax-star">
           <div class="layer" data-depth="0.1">
-            <div class="star__img"><img src="./assets/img/star.svg"></div>
+            <!-- <div class="star__img"><img src="./assets/img/star.svg"></div> -->
           </div>
         </div>
         <div class="sky-color"></div>
@@ -175,7 +177,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/jquery.fullPage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="./assets/js/parallax.js"></script>
+    <!-- <script src="./assets/js/parallax.js"></script> -->
     <script src="./assets/js/common.min.js"></script>
     <script type="text/javascript">
       // $(document).ready(function() {
@@ -191,15 +193,19 @@
 
       if (window.location.hash == '#top' || window.location.hash == '') {
         $('#headerTitle').css('fontSize', '5rem');
+        $('.headerImage').css('display', 'inline');
       }else {
+        $('.headerImage').css('display', 'none');
         $('#headerTitle').css('fontSize', '3rem');
       }
 
       $(window).on('hashchange', function(e){
       console.log(e.target.location.hash);
       if (e.target.location.hash == "#top" || e.target.location.hash == ""){
-        $('#headerTitle').css('fontSize', '5rem')
+        $('#headerTitle').css('fontSize', '5rem');
+        $('.headerImage').css('display', 'inline');
       }else {
+        $('.headerImage').css('display', 'none');
         $('#headerTitle').css('fontSize', '3rem');
       }
     });

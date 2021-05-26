@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 a,
 abbr,
@@ -105,6 +106,13 @@ section {
 body {
 	line-height: 1
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+/* Base */
+* {
+	font-family: 'Roboto', sans-serif !important;
+}
+
 
 ol,
 ul {
@@ -291,7 +299,7 @@ img {
 }
 
 .title__text {
-	font-size: 7rem;
+	font-size: 5rem;
 	line-height: 1;
 	letter-spacing: 0.1em;
 	margin-bottom: 1.6rem;
@@ -613,7 +621,7 @@ img {
 
 .heading-num {
 	font-size: 4rem;
-	color: #ff4d5a;
+	color: #0c54c2;
 	position: relative;
 	padding-left: 6.2rem;
 	padding-right: 3.2rem;
@@ -1060,10 +1068,10 @@ header .menuIcon.js-menuOpen:before {
 }
 
 header .global-nav {
-	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
-	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-	background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-	background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#0c54c2));
+	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 42%, #0c54c2);
+	background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #0c54c2);
+	background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #0c54c2);
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -1407,7 +1415,7 @@ header .global-nav__sns a:last-child {
 	font-size: 6.4rem;
 	letter-spacing: 0.1em;
 	text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-	color: #ff4d5a;
+	color: #0c54c2;
 	font-family: "futura_b"
 }
 
@@ -1510,7 +1518,7 @@ header .global-nav__sns a:last-child {
 	height: 100%;
 	top: 0;
 	right: 0;
-	background: #ff4d5a;
+	background: #0c54c2;
 	-webkit-transform: translate3d(100%, 0, 0);
 	transform: translate3d(100%, 0, 0)
 }
@@ -2149,7 +2157,7 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__high {
-	color: #ff4d5a
+	color: #0c54c2
 }
 
 .skill-set__bar {
@@ -2179,10 +2187,10 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__bar.p90:after {
-	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
-	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-	background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-	background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a)
+	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#0c54c2));
+	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 42%, #0c54c2);
+	background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #0c54c2);
+	background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #0c54c2)
 }
 
 .skill-set__bar.p90.in:after {
@@ -2191,10 +2199,10 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__bar.p80:after {
-	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(50%, #8c2b7a), to(#ff4d5a));
-	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 50%, #ff4d5a);
-	background-image: -o-linear-gradient(left, #072142, #8c2b7a 50%, #ff4d5a);
-	background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a)
+	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(50%, #8c2b7a), to(#0c54c2));
+	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 50%, #0c54c2);
+	background-image: -o-linear-gradient(left, #072142, #8c2b7a 50%, #0c54c2);
+	background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #0c54c2)
 }
 
 .skill-set__bar.p80.in:after {
@@ -2203,10 +2211,10 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__bar.p70:after {
-	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(65%, #8c2b7a), to(#ff4d5a));
-	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 65%, #ff4d5a);
-	background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%, #ff4d5a);
-	background-image: linear-gradient(to right, #072142, #8c2b7a 65%, #ff4d5a)
+	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(65%, #8c2b7a), to(#0c54c2));
+	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 65%, #0c54c2);
+	background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%, #0c54c2);
+	background-image: linear-gradient(to right, #072142, #8c2b7a 65%, #0c54c2)
 }
 
 .skill-set__bar.p70.in:after {
@@ -2215,10 +2223,10 @@ header .global-nav__sns a:last-child {
 }
 
 .skill-set__bar.p60:after {
-	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(75%, #8c2b7a), to(#ff4d5a));
-	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 75%, #ff4d5a);
-	background-image: -o-linear-gradient(left, #072142, #8c2b7a 75%, #ff4d5a);
-	background-image: linear-gradient(to right, #072142, #8c2b7a 75%, #ff4d5a)
+	background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(75%, #8c2b7a), to(#0c54c2));
+	background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 75%, #0c54c2);
+	background-image: -o-linear-gradient(left, #072142, #8c2b7a 75%, #0c54c2);
+	background-image: linear-gradient(to right, #072142, #8c2b7a 75%, #0c54c2)
 }
 
 .skill-set__bar.p60.in:after {
@@ -2254,9 +2262,9 @@ header .global-nav__sns a:last-child {
 	width: 100%;
 	padding: 14.4rem 0;
 	text-align: center;
-	background-image: -webkit-linear-gradient(349deg, #072142, #8c2b7a 52%, #ff4d5a);
-	background-image: -o-linear-gradient(349deg, #072142, #8c2b7a 52%, #ff4d5a);
-	background-image: linear-gradient(101deg, #072142, #8c2b7a 52%, #ff4d5a);
+	background-image: -webkit-linear-gradient(349deg, #072142, #8c2b7a 52%, #0c54c2);
+	background-image: -o-linear-gradient(349deg, #072142, #8c2b7a 52%, #0c54c2);
+	background-image: linear-gradient(101deg, #072142, #8c2b7a 52%, #0c54c2);
 	position: relative;
 	z-index: 100
 }
