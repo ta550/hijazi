@@ -110,6 +110,7 @@ body {
 /* Base */
 * {
 	font-family: 'Roboto', sans-serif !important;
+	font-style: normal !important;
 }
 
 
